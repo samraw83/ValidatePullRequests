@@ -2,4 +2,4 @@
 coverage:
   status:
     diff:
-      target: 95%
+      target: 70%
