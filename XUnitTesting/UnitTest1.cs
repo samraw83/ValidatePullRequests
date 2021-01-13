@@ -18,6 +18,19 @@ namespace XUnitTesting
 
         }
     }
+    
+    public class UnitTest2
+    {
+        [Fact]
+        public void Test2()
+        {
+            var controller = new valuesController();
+            var result = controller.Get();
+            Assert.Equal(2, result.Count());
+
+        }
+    }
+
 
  
 }
