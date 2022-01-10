@@ -11,7 +11,7 @@ resources:
       type: github
       endpoint: AllTesting
       name: samraw83/ValidatePullRequests
-      ref: refs/master
+      ref: master
       trigger: none
       
 trigger:
