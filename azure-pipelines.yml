@@ -3,8 +3,22 @@
 # Add steps that publish symbols, save build artifacts, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
 
+name: "v$(Date:yyyyMMdd)$(Rev:rr)"
+
+resources:
+  repositories:
+    - repository: ValidatePullRequests
+      type: github
+      endpoint: AllTesting
+      name: samraw83/ValidatePullRequests
+      ref: refs/master
+      trigger: none
+      
 trigger:
-- main
+  branches:
+    include:
+      - dev
+      - master
 
 pool:
   vmImage: 'windows-latest'
