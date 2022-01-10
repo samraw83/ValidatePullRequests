@@ -11,7 +11,7 @@ resources:
       type: github
       endpoint: AllTesting
       name: samraw83/ValidatePullRequests
-      ref: master
+      ref: refs/tags/uipath.kv-access.1.1.0
       trigger: none
       
 trigger:
