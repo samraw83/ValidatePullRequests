@@ -22,7 +22,7 @@ pr:
   autoCancel: true
   branches:
     include:
-      - develop
+      - dev
 
 pool:
   vmImage: 'windows-latest'
